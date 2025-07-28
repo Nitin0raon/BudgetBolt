@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import ClerkThemeProvider from "@/components/ClerkThemeProveder";
 import "./globals.css";
-import { ThemeProvider } from "@/contexts/themeContext";
+import { ThemeProvider } from "@/contexts/ThemeContext";
+import Footer from "@/components/Footer";
 
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
     </ClerkThemeProvider>
